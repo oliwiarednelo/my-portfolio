@@ -1,0 +1,504 @@
+@import url('http://fonts.cdnfonts.com/css/general-sans');
+@import url('http://fonts.cdnfonts.com/css/clash-display');
+/* ---------- root variables ---------- */
+:root {
+    --white: #fafafa;
+    --light-green: rgb(172, 198, 201);
+    --light-grey: #f1f1f4;
+    --text-color-light: #f1f1f1;
+    --text-color-dark: #333;
+    --text-color-danger: rgb(152, 58, 58);
+    --white: #f1f1f1;
+}
+
+
+
+body {
+    background-color: #fafafa; 
+    height: 100vh;  
+}
+
+main {
+    
+    background-color: #fafafa;
+ 
+}
+
+
+
+
+.page p {
+    font-family: 'General Sans', sans-serif;
+}
+.text-center {
+    text-align: center;
+}
+.text-error {
+    color: var(--text-color-danger);
+}
+
+.text-error:first-letter {
+    text-transform: uppercase;
+}
+
+/* ---------- animations ---------- */
+/* fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ---------- nav styling ---------- */
+nav {
+    font-family: 'General Sans', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    text-align: right;
+    display: flex;
+   justify-content: space-between;
+
+   background-color: #fafafa;
+   z-index: 1;
+}
+
+.nav-links {
+    float: right;
+}
+
+/* Style the links inside the navigation bar */
+.nav-links a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+margin-right: 60px;
+
+    margin-top: 20px;
+    padding-bottom: 3px;
+   text-decoration: none;
+    
+    opacity: 50%;
+}
+
+.nav-links a:nth-of-type(4){
+    margin-right: 0px;
+}
+
+/* Change the color of links on hover */
+.nav-links a:hover {
+   color: #2E2E2E;
+   opacity: 100%;
+   border-bottom: #2E2E2E solid 2px ;
+   cursor: pointer;
+}
+
+/* Add a color to the active/current link */
+.nav-links a.active {
+    opacity: 100%;
+    color: #2E2E2E;
+    border-bottom: #2E2E2E solid 2px ;
+  
+}
+
+.logo {
+    color: black;
+    opacity: 50%;
+    width: 70px;
+    margin-top: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.logo:hover {
+    color: #2E2E2E;
+    opacity: 100%;
+    width: 70px;
+    margin-top: 20px;
+    z-index: 1000;
+}
+
+/* ---------- grid container styling ---------- */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.grid-container > article {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 1.5em;
+    background-color: var(--white);
+    transition: 0.5s;
+    animation: fadeIn 0.5s;
+    cursor: pointer;
+}
+
+.grid-container > article ::first-letter {
+    text-transform: uppercase;
+}
+
+.grid-container > article:hover {
+    box-shadow: 0 8px 16px 0 var(--green);
+}
+
+.grid-container > article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ---------- form styling ---------- */
+
+form {
+    margin: auto;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 1em 1em 2em;
+    background-color: var(--white);
+    max-width: 380px;
+    animation: fadeIn 0.5s;
+}
+
+form button {
+    padding: 12px 15px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 350px;
+}
+
+/*button {
+    font-weight: 300;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    color: var(--text-color-light);
+    background-color: var(--green);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    font-size: 0.8em;
+    display: block;
+    margin: 1em auto 0;
+}
+
+button.btn-outline {
+    background-color: var(--light-green);
+    color: var(--green);
+    border: solid 2px var(--green);
+}
+
+.btn-sign-out {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    font-size: 0.7em;
+    padding: 2.032em 1em;
+}
+*/
+input {
+    margin: 1em auto;
+    width: 100%;
+    max-width: 350px;
+    padding: 1em;
+    box-sizing: border-box;
+    display: block;
+    background: var(--white);
+    border: solid 2px var(--green);
+}
+
+.image-preview {
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+   
+}
+
+form .file-input {
+    display: none;
+}
+
+/* ---------- loader styling ---------- */
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999;
+    overflow: hidden;
+    background: var(--loader-background-color);
+    text-align: center;
+}
+
+.spinner {
+    border: 5px solid var(--light-green);
+    border-radius: 50%;
+    border-top: 5px solid var(--green);
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 1s linear infinite;
+    /* Safari */
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.4s, opacity 0.4s linear;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    margin: 0 0 1.2em;
+    text-align: left;
+}
+
+.avatar span {
+    margin: 0 0 0 1em;
+}
+
+.avatar h3,
+.avatar p {
+    margin: 0;
+}
+
+article .avatar img {
+    max-width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.front-page {
+    height:100vh ;
+    
+}
+
+.career {
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+.career p {
+    font-size: 25px;
+}
+
+.App {
+
+flex-direction: row;
+font-size: 100px;
+font-weight: 500 ;
+    font-family: 'Clash Display', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+.small-headline {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+   
+}
+
+.small-headline p{
+    font-family: 'Clash Display', sans-serif;
+    font-size: 20px;
+}
+
+.end-text {
+display: flex;
+justify-content: center;
+
+}
+.end-text p{
+font-size: 40px;
+text-align: center;
+font-family: 'Clash Display', sans-serif;
+
+}
+
+.end-text a{
+    color: black;
+   text-decoration: none;
+    
+    opacity: 50%;
+}
+.end-text a:hover {
+        color: #2E2E2E;
+        opacity: 100%;
+        border-bottom: #2E2E2E solid 2px ;
+        cursor: pointer;
+    }
+
+.some {
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.some img {
+    width: 40px;
+    color: black;
+opacity: 50%;
+}
+
+.some img:hover {
+    color: #2E2E2E;
+        opacity: 100%;
+     cursor: pointer;
+}
+
+.project-text-vw {
+    margin-top: 150px;
+display: flex;
+flex-direction: column;
+
+}
+.project-title h1 {
+   font-size: 80px;
+   font-family: 'Clash Display', sans-serif;
+   font-weight: 500;
+   margin-top: 0px;
+   line-height: 80px;
+}
+
+.year p {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 20px;
+}
+
+
+ .button-black {
+  margin-top: -20px;
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #2E2E2E;
+  color: #fafafa;
+  border:#2E2E2E;
+font-size: 18px;
+font-weight: 500;
+
+}
+ 
+.button-black:hover {
+cursor: pointer;
+  background-color: transparent;
+  border:#2E2E2E 3px solid;
+  color: #2E2E2E;
+}
+
+.front {
+    display: flex;
+    flex-direction: row;
+}
+
+.mockup img{
+    width: 900px;
+    margin-top: 150px;
+}
+
+.page {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.ol p{
+    font-size: 100px;
+    font-family: 'Clash Display', sans-serif;
+    
+}
+
+
+
+.ol {
+margin-bottom: 142px;
+
+}
+
+.grid {
+    display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   text-align: left;
+
+}
+
+.grid th {
+    font-family: 'General Sans', sans-serif;
+    font-size: 20px;
+    font-weight:600;
+    margin-bottom: 20px;
+}
+
+.grid tr {
+    font-family: 'General Sans', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+   
+}
+
+.problem-statement{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.problem-statement th {
+    font-family: 'General Sans', sans-serif;
+    font-size: 25px;
+    font-weight:600;
+}
+
+.problem-statement tr {
+    font-family: 'General Sans', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+}
