@@ -1,3 +1,6 @@
+import React from "react";
+
+
 export default function CG() {
     return (
         <section className="page">
@@ -12,7 +15,7 @@ export default function CG() {
             <button className="button-black" >LIVE</button>
             </div>
 <div className="mockup">
-    <img src="images/cgmock.png" alt="mockup"></img>
+    <img src="../public/images/cgmock.png" alt="mockup"></img>
 </div>
 </div>
 
@@ -41,6 +44,8 @@ export default function CG() {
  Connecting Ground, help make the brand more recognizable, <br></br>
 as well as strengthen the digital presence to expand the company’s customer base?”</tr>
 </section>
+
+
 
         </section>
     );

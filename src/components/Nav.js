@@ -5,7 +5,7 @@ export default function Nav() {
        
         <nav>
             <div className="logo">
-        <NavLink to="/home"><img src="images/olol.svg" className="logo" alt="logo"></img></NavLink>
+        <NavLink to="/home"><img src="images/olol.svg" alt="logo"></img></NavLink>
         </div>
         <div className="nav-links">
             <NavLink to="/home">Home</NavLink>

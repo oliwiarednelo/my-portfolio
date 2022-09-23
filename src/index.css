@@ -116,7 +116,7 @@ margin-right: 60px;
   
 }
 
-.logo {
+nav img {
     color: black;
     opacity: 50%;
     width: 70px;
@@ -125,12 +125,13 @@ margin-right: 60px;
     z-index: 1000;
 }
 
-.logo:hover {
+nav img:hover {
     color: #2E2E2E;
     opacity: 100%;
     width: 70px;
     margin-top: 20px;
     z-index: 1000;
+    cursor: pointer;
 }
 
 /* ---------- grid container styling ---------- */
@@ -489,6 +490,8 @@ margin-bottom: 142px;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    height: 300px;
+    height: 100%;
 }
 
 .problem-statement th {
@@ -501,4 +504,8 @@ margin-bottom: 142px;
     font-family: 'General Sans', sans-serif;
     font-size: 18px;
     margin-top: 20px;
+}
+
+.small-headline img {
+    width: 100px;
 }
