@@ -1,8 +1,13 @@
+
 export default function PlayPage() {
     return (
         <section className="page">
-            <h1>Play</h1>
-            <p>Here you can find some of my side projects.</p>
+            <div className="play-container">
+            <div className="play-text">
+            <h1>Work in progress</h1>
+            <p>My side projects will appear here soon. I promise:)</p>
+            </div>
+            </div>
         </section>
     );
 }

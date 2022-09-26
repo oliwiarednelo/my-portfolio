@@ -1,0 +1,107 @@
+form {
+    display: flex;
+    flex-direction: column;
+width: 500px;
+    font-size: 16px;
+    background-color: #2E2E2E;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+label {
+    color: #fafafa;
+    font-family: 'General Sans', sans-serif;
+font-weight: 400;
+text-align: left;
+
+}
+
+
+textarea {
+
+      max-width:100%;
+      max-height: 100px;
+      min-height: 100px;
+     font-family: 'General Sans', sans-serif ;
+font-size: 16px;
+padding: 10px;
+      border-radius: 5px;
+      border: 1px solid rgb(220, 220, 220);
+     
+}
+
+label {
+    margin-top: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    max-width: 100%;
+padding: 10px;
+    font-family: 'General Sans', sans-serif ;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #fafafa;
+    border: 1px solid rgb(220, 220, 220);
+}
+ 
+
+
+.message {
+    margin-bottom: 10px;
+}
+
+.btn-submit {
+    width: 100px;
+    border-radius: 30px;
+    color: #2E2E2E;
+    background-color: #fafafa;
+    border: #2E2E2E solid 2px;
+font-weight: 600;
+font-size: 16px;
+justify-content: center;
+display: flex;
+margin-top: 25px;
+align-self: center;
+}
+
+.btn-submit:hover {
+    width: 100px;
+    border-radius: 30px;
+    background-color: transparent;
+  color: #fafafa;
+    border: #fafafa solid 2px;
+    cursor: pointer;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 70px;
+} 
+
+.contact-intro h2{
+    font-family: 'Clash Display', sans-serif;
+    font-size: 80px;
+}
+.contact-intro p{
+    font-family: 'General Sans', sans-serif ;
+    font-size: 40px;
+    margin-top:-50px ;
+}
+
+.confirmation-message {
+    color: #fafafa;
+    text-align: left;
+    font-family: 'General Sans', sans-serif ;
+    font-size: 16px;
+}
+
+@media (max-width: 992px) {
+    .contact-form {
+        flex-direction: column;
+    }
+  }

@@ -1,0 +1,88 @@
+.card-link {
+    text-decoration: none;
+    color: #2E2E2E;
+
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding-right: 10%;
+
+
+
+}
+
+
+
+
+
+.thumbnail-container img{
+    width: 600px;
+
+}
+
+
+.card-title h1{
+    color: #2E2E2E;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+   
+}
+
+.card-body p {
+    font-family: 'General Sans', sans-serif;
+    color: #2E2E2E;
+    margin-top: -10px;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+        padding: 15px;
+        
+
+    }
+  
+    .thumbnail-container {
+      display: none;
+    }
+    
+  }
+  
+  @media (min-width: 600px) {
+    .card-container {
+        flex-direction: row;
+    }
+
+    .btn-project button{
+display: none;
+    }
+  }
+
+
+  .btn-project button {
+    font-family: 'General Sans', sans-serif;
+    font-weight: 400;
+    color: #fafafa;
+    border-style: solid;
+    border-color:#2E2E2E ; 
+
+    background-color: #2E2E2E;
+    width: 150px;
+  height: 50px;
+  border-radius: 30px;
+margin-top: 20px;
+    font-size: 16px;
+  }
+  .btn-project button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border:#2E2E2E 2px solid;
+    color: #2E2E2E;
+  }

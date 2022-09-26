@@ -1,0 +1,181 @@
+.page {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.year {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 20px;
+}
+.post-row h1 {
+    font-size: 80px;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 500;
+    margin-top: 30px;
+    line-height: 40px;
+
+}
+
+.post-row {
+    margin-top: 100px;
+display: flex;
+flex-direction: row;
+margin-right: 5%;
+
+
+}
+
+.mockup-img  {
+width: 900px;
+margin-left: 350px;
+margin-top: -300px;
+
+
+}
+
+.live-btn{
+    margin-top: -40px;
+  }
+  .live-btn button {
+    font-family: 'General Sans', sans-serif;
+    font-weight: 500;
+    color: #fafafa;
+    border-style: solid;
+    border-color:#2E2E2E ; 
+
+    background-color: #2E2E2E;
+    width: 120px;
+  height: 50px;
+  border-radius: 30px;
+
+    font-size: 18px;
+   
+  
+  }
+  
+  .live-btn button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border:#2E2E2E 3px solid;
+    color: #2E2E2E;
+    
+  }
+
+
+.grid {
+    display: flex;
+   flex-direction: row;
+   justify-content:space-between;
+   text-align: left;
+margin-top: -150px;
+}
+
+.grid h3 {
+    font-family: 'General Sans', sans-serif;
+    font-size: 18px;
+    font-weight:600;
+   margin-bottom: 25px;
+}
+
+.grid p {
+    font-family: 'General Sans', sans-serif;
+    font-size: 18px;
+   
+   margin-top: -15px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.problem-statement{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    background-color: #E6E6E6;
+}
+
+.problem-statement h3 {
+    font-family: 'General Sans', sans-serif;
+    font-size: 30px;
+    font-weight:600;
+    color: #748B75;
+ 
+}
+
+.problem-statement p {
+    font-family: 'General Sans', sans-serif;
+    font-size: 18px;
+margin-top: -10px;
+    line-height: 15px;
+    font-weight: 400;
+}
+
+.description {
+    margin-top: 50px;
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-right: 10%;
+margin-left:10%;
+align-content: center;
+}
+
+.description-title h3 {
+    font-family: 'General Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+text-align: left;
+
+}
+
+.description-body p {
+font-size: 18px;
+
+}
+
+.description-body {
+    width: 70%;
+}
+
+.back-link {
+    text-decoration: none;
+    color: black;
+    opacity: 50%;
+    font-family: 'General Sans', sans-serif;
+
+    font-size: 18px;
+
+
+}
+.back-link:hover {
+    color: #2E2E2E;
+    opacity: 100%;
+  
+
+}
+
+.grid-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  margin-top:70px;
+  align-self: center;
+}
+
+.grid-images img {
+    width: 500px;
+}
+
+@media (max-width: 600px) {
+.post-row {
+flex-direction: column;
+} 
+ }
